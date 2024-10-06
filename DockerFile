@@ -1,0 +1,35 @@
+#FROM node:20.11-alpine
+#WORKDIR /app
+#COPY package*.json ./
+#RUN npm install
+#COPY . .
+#RUN npm run build
+#EXPOSE 5001
+#CMD ["npm", "run", "preview", "--host"]
+
+# Use the official Node.js image as the base
+FROM node:20.11-alpine
+
+# Set the working directory
+WORKDIR /app
+
+# Copy package.json and package-lock.json (if available)
+COPY package*.json ./
+
+# Install dependencies
+RUN npm install --production
+
+# Copy the entire project
+COPY . .
+
+# Build the Vite React app
+RUN npm run build
+
+# Install serve to run the built app
+RUN npm install -g serve
+
+# Expose the port the app will run on
+EXPOSE 5001
+
+# Start the app using serve
+CMD ["serve", "-s", "dist", "-l", "5001"]

@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import style from './styleBs/containerx.module.css'
+import style from '../uploadcsv/styleBs/containerx.module.css'
 import deleteimage from '../imagesBs/Delete.png'
 import deleteinformationimage from '../imagesBs/Delete_information.jpeg'
 import deletesuccessfully from '../imagesBs/deletesuccessfully.png'

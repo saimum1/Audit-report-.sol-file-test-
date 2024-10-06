@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import style from './styleBs/containerx.module.css';
+import style from '../uploadcsv/styleBs/containerx.module.css';
 import axios  from 'axios';
 import RecordLoading from './RecordLoading';
 import CommonDialogueBox from './CommonDialogueBox';
