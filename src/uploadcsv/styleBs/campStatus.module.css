@@ -1,0 +1,347 @@
+.mainContainer{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 3% 9% 100%;
+    grid-template-columns: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: flex-start;
+    padding:1% 5%;
+    gap: 1%;
+    margin: 0;
+}
+
+.campaignWeekDataContainer{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-columns: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: flex-start;
+    padding: 3% 7%; 
+    gap: 1%;
+    margin: 0;
+}
+
+.first_div{
+    width: 100%;
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-items: flex-start;
+    text-align: start;
+}
+
+.campIcon{
+    height:100%;
+    /* justify-self: flex-start; */
+}
+
+
+.campIcon2{
+  height:100%;
+  transition: all 200ms;
+  cursor: pointer;
+  margin: 0 2px;
+}
+
+.campIcon2:hover{
+  transform: scale(1.3);
+}
+.seco_img_icon{
+    width: 10%;
+    height: 38%; 
+    cursor: pointer;
+    transition: all 300ms;
+    filter: contrast(95%);
+}
+
+.seco_img_icon:hover{
+    transform: scale(1.1);
+}
+
+
+.second_div{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    gap: 15%;
+    text-transform: capitalize;
+    
+}
+
+.third_div{
+    width: 100%;
+    height: 90%;
+    margin-top: 2%;
+}
+
+
+.left_div_s{
+    display: flex;
+    flex: 8;
+    width: 100%;
+    justify-content: flex-start;
+    text-align: start;
+    align-items: first baseline;
+    gap: 1%;
+}
+.right_div_s{
+    width: 100%;
+    display: flex;
+    flex: 2;
+    float: right;
+    justify-content: flex-end;
+    text-align: end;
+    align-items: first baseline;
+    gap: 1%;
+}
+
+
+
+label{
+    font-size: 100%;
+  }
+  
+.custom_select {
+    position: relative;
+    display: flex;
+    width: 20%;
+    transition: all 300ms;
+    background-color: #ffffff;
+    z-index: 10;
+    border-radius: 5px;
+    float: left;
+    padding: 0.4%;
+    color: #9f9393;
+}
+
+  
+  .custom_select select {
+    border: 1px solid rgba(0, 0, 0, 0.444); 
+    border-radius: 4px;
+    display: block;
+    color: rgb(0, 0, 0);
+    cursor:pointer;
+    width:100%;
+    padding:2% ;
+  } 
+  
+  
+  .custom_select select:focus{
+  outline: none;
+  }
+
+
+
+  .table{
+    overflow-y:auto;
+    height: 100%;
+    width: 100%;
+  
+  }
+
+  .circleDiv{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+ 
+  }
+  .titlecontainer{
+    display: flex;
+    gap: 8px;
+
+  }
+
+  .barchartIcon{
+    width: 20%;
+    transition: all 300ms;
+  }
+
+  .barchartIcon:hover{
+    transform: scale(1.1);
+  }
+
+
+  .titlehover:hover{
+        text-decoration: underline;
+        color: rgb(3, 20, 253);
+        /* color: #ed0505; */
+  }
+
+
+
+
+/* year Chart  */
+
+
+
+.yearchartdiv{
+  height:100vh ;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 3% 90%;
+  padding: 5% 0;
+  /* justify-content: center; */
+  align-items: center; 
+  text-align: center;
+}
+
+.yearchartseconddiv{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items:center;
+  width: 90%;
+  box-shadow: 1px 2px 8px black;
+  margin: 0 auto;
+  height: 90%;
+  border-radius: 3px;
+  transition: all 300ms;
+}
+.yearchartseconddiv:hover{
+  box-shadow: 2px 3px 18px black;
+}
+
+.yearchartfirstdiv{
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+  align-items: flex-start;
+  width: 80%;
+  height:90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* ////// camFunnel////// */
+.camFunnelContainer{
+  height:100vh ;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 4% 96%;
+  padding: 5% ;
+  gap: 5%;
+}
+.campFunnel_first_div{
+  display: flex;
+  width: 90%;
+  height: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.26);
+  padding: 2px;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.805);
+  justify-content: space-between;
+/* color: #012cee; */
+}
+
+.chFunfirstdiv{
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  gap: 1%;
+  font-family:  sans-serif;
+  font-size: 0.8rem;
+  font-weight: 550;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: start;
+}
+
+.chFunSeconddiv{
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  gap: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 550;
+  align-items: center;
+  justify-content:center;
+  text-align: end;
+
+}
+
+.campFunnel_second_div{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+.campFunnel_funnel_div{
+  flex: 6;
+  height: 100%;
+  width: 100%;
+  float: left;
+  padding: 0;
+}
+
+.tablediv{
+  display: flex;
+  justify-content: flex-end;
+  text-align: end;
+  flex: 6;
+  height: 100%;
+  width: 100%;
+  float: right;
+  padding: 0 4%;
+  /* color: #cf0707; */
+}
+
+.linkclick:hover{
+   color: blue;
+}
+
+
+
+
+ .tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 220px;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  color: #060606;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  border: 1.5px solid rgb(238, 124, 10);
+  position: absolute;
+  z-index: 1;
+  left: 80%;
+  transition:  all 50ms ease-in-out;
+  
+}
+
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+} 
+
+
+.img_icon_mrk:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  }
