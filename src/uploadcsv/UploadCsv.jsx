@@ -56,7 +56,7 @@ const UploadCsv = ({productName,folderName,getdata}) => {
           
 
          
-          setcdnlinkx('http://178.128.82.148:5500/saveRequirementsFiles')
+          setcdnlinkx('https://178.128.82.148:5500/saveRequirementsFiles')
 
         };
   
