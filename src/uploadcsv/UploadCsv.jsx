@@ -40,24 +40,7 @@ const UploadCsv = ({productName,folderName,getdata}) => {
     }, [productName,folderName,getdata])
     
     const getCDNinfo = async() => {
-      
-        // await  axios.get(`${apiUrl}/api/v1/marketingDashboard/getcdninfo`).then((response) => {
-        //     console.log('cdn infoo', response.data.cdninfo);
-        //     const res2= response.data.cdninfo[0]
-        //     setcdnlinkx(res2?.cdnlink)
-        //     setcdnStatus(res2?.cdn_status)
-  
-        //   }).catch((error) => {
-        //     console.log('error', error);
-        //     setcdnlinkx('')
-           
-        //   })
-
-          
-
-         
-          setcdnlinkx('https://178.128.82.148:5500/saveRequirementsFiles')
-
+          setcdnlinkx('http://178.128.82.148:5500/saveRequirementsFiles')
         };
   
     
