@@ -40,7 +40,7 @@ const UploadCsv = ({productName,folderName,getdata}) => {
     }, [productName,folderName,getdata])
     
     const getCDNinfo = async() => {
-          setcdnlinkx('https://filecdnapi.vercel.app')
+          setcdnlinkx('https://filecdnapi.vercel.app/saveRequirementsFiles')
         };
   
     
