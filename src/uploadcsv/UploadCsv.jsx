@@ -40,7 +40,8 @@ const UploadCsv = ({productName,folderName,getdata}) => {
     }, [productName,folderName,getdata])
     
     const getCDNinfo = async() => {
-          setcdnlinkx('https://filecdnapi.vercel.app/saveRequirementsFiles')
+          setcdnlinkx('https://filecdnapi.onrender.com/saveRequirementsFiles') 
+          //   setcdnlinkx('https://filecdnapi.vercel.app/saveRequirementsFiles')
         };
   
     
@@ -138,7 +139,9 @@ const UploadCsv = ({productName,folderName,getdata}) => {
 
 
 
-    const uploadfile =()=>{                          
+    
+
+    const uploadfile =async()=>{                          
 
                 let data = new FormData();
                 data.append('folder_name', folderName); 
@@ -148,8 +151,13 @@ const UploadCsv = ({productName,folderName,getdata}) => {
                 data.append('cdnlink',cdnlinkx)
                 data.append('cdnstatus',cdnStatus)
 
+
+
+
+              
+
                       
-                // axios.post(cdnlinkx, data) 
+                axios.post(cdnlinkx, data) 
                 axios.post(cdnlinkx, data)  
                       .then((response) => {
 
